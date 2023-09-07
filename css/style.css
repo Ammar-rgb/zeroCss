@@ -117,3 +117,181 @@
 } */
 
 /* ---------------------------------------------------- */
+
+
+/* 
+div {
+    width: 400px;
+    height: 200px;
+    background-color: greenyellow;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border: solid blue 10px;
+    outline: brown solid 20px;
+
+} */
+/* ------------------------------------------------ */
+
+/* div {
+    background-color: rgba(177, 55, 55, 0.192);
+    display: inline-block;
+    padding: 70px 90px;
+    margin:20px;
+    border: 5px solid;
+    outline: 5px solid;
+}
+
+.shape1 {
+    border-color: red;
+
+}
+
+.shape2 {
+    border-color: blue rgb(6, 223, 6);
+}
+
+.shape3 {
+    border-color: red green blue yellow;
+    border-style: dashed;
+} */
+/* -------------------------------------------- */
+/* 
+div {
+    width: 400px;
+    background-color: #f1f1f1;
+    margin: 40px;
+    padding: 20px;
+    border-left: solid 10px rgb(221, 77, 144);
+    outline: solid 10px #f1f1f1;
+}
+
+.shape2 {
+    visibility: hidden;
+}
+
+.shape3 {
+    border-left-color: rgb(39, 223, 162);
+} */
+
+/* ----------------------------------------------- */
+/* in nesting the big parent takes all classes inside it but doesn't take elements. it overwrite classes */
+/* it overwrite if i wrote parent .class */
+/* .child .title {
+    color: red;
+}
+
+.parent span {
+    color: blue;
+}
+
+p, .title {
+    color: green;
+} */
+
+/* div {
+    background-color: brown;
+    padding: 30px;
+    margin: 25px;
+    color: black;
+    font-size: 20px;
+    max-width:400px;
+    width: fit-content;
+    max-height: 30px;
+    
+}
+
+.four {
+    overflow: hidden;
+} */
+
+/* ------------------------------------------- */
+/* div {
+    font-size: 80px;
+    text-shadow: 3px 3px 0 red, 6px 6px 0 blue, 9px 9px 0 pink;
+    /* text-shadow: 0 0 3px red, 0 0 3px blue, 0 0 3px pink; */
+
+    /* ------------------------------------- */
+
+/* p {
+    font-family:sans-serif;
+    text-align: center;
+}
+.one {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.two {
+    font-size: 65px;
+    text-transform: capitalize;
+}
+
+.three {
+    font-size: 60px;
+}
+ */
+ /* --------------------------------------------------- */
+
+/* div {
+    width: 400px;
+    background-color: #ddd9d9;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+.two {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:clip;
+}
+
+
+
+.three {
+    font-size: 18px;
+    word-spacing: -1px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+} */
+
+/* ----------------------------------------- */
+/* noteeee */
+/* i couldn't make zero in the center  when i used height
+it worked when i used padding. you can't center it vertically after using height because it leaves a space after the word */
+/* a {
+    display: block;
+    width: 250px;
+    padding: 30px;
+    background-color: rgb(41, 230, 205);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: solid 5px rgb(2, 68, 68);
+    text-align: center;
+
+} */
+/* ---------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
