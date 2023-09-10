@@ -350,6 +350,14 @@ div {
 
 /* ---------------------------------------------- */
 
+/* noteee in the float :
+we use overflow hidden or auto to fix the float issue.
+it hides the content outside the parent buttttt not actually 
+hide it. it get them back to the parent. that's beacause the mechanism 
+of the float is different from othe css properties
+-- we can also use clear
+*/
+
 
 
 
