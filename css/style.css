@@ -357,11 +357,252 @@ hide it. it get them back to the parent. that's beacause the mechanism
 of the float is different from othe css properties
 -- we can also use clear
 */
+/* ---------------------------------------------------- */
+
+/* .parent {
+    padding: 0;
+    background-color: #eee;
+    width: 800px;
+    overflow: hidden;
+    text-align: center;
+    font-family: sans-serif;
+    margin: auto;
+}
+.parent div {
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: #d6cdcd;
+    padding: 10px 0;
+    
+}
 
 
+.full {
+    width:calc(100% - 30px);
+}
+
+.three {
+    float: left;
+    width:calc((100% - 60px) /3);
+}
+
+.two {
+    float: left;
+    width: calc((100% - 45px)/2);
+
+}
+
+.four {
+    float: left;
+    width: calc((100% - 75px)/4);
+    margin-bottom: 15px;
+} */
+
+/* ------------------------------------------------------- */
+
+/* div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color:rgb(161, 150, 150) ;
+    color: black;
+  }
+
+.one {
+    background-color:rgb(161, 150, 150,0.1) 
+}
+
+.two {
+    opacity: 0.1;
+} */
+
+/* ---------------------------------------------------------------- */
+
+/* 
+position fixed and absolute acts like float. the element gets out the flow
+but relative and sticky doesn't
+*/
+
+/* when an element takes position relative in move according to it self 
+and whem it takes position absolute it it moves according to the body
+---------- if i want the element that took position absolute move 
+according to its direct parent, i give the parent position relative
+*/
+
+/* 
+the difference between absolute and fixed is that when you 
+scroll the fixed one is still in its place and it is seen  but the absolute is still in its place but moves and disapear with scroll
+andddddd fixed does't care if the parent is absolute or relative
+
+*/
+
+/* 
+the position sticky is like fixed a little bit it moves with the scroll 
+till a specific point
+*/
+/* ------------------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    background-color: green;
+    z-index: 3;
+    top: 30px;
+    left: 30px;
+}
+
+.red {
+    background-color: red;
+    z-index: 4;
+    top: 40px;
+    left: 40px;
+}
+
+.blue {
+    background-color: blue;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.black {
+    background-color: black;
+    top: 30px;
+    left: 20px;
+} */
+
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    background-color: #eee;
+    padding: 30px;
+    border-bottom: orangered solid;
+    border-top: orangered solid;
+    border-right: blue solid;
+    border-left: blue solid;
+    line-height:2;
+}
+.top-left, .bottom-left, .top-right, .bottom-right {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    text-transform: -50%;
+    padding: 10px;
+    
+}
+.top-left, .bottom-left {
+    border-right: orangered solid;
+}
+.top-right, .bottom-right {
+    border-left: orangered solid;
+}
+
+.top-left {
+    top: -26px;
+    left: -26.5px;
+}
+
+.bottom-left {
+    bottom: -26px;
+    left: -26.5px;
+}
+
+.top-right {
+    top: -26px;
+    right: -26.5px;
+}
+
+.bottom-right {
+    bottom: -26px;
+    right: -26.5px;
+} */
 
 
+/* ------------------------------------------------- */
 
+/* .main {
+    padding: 40px;
+    width: 400px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+ul li {
+    margin: 10px;
+    background-color: #eee;
+    list-style: none;
+    padding: 10px;
+}
+
+.html li, .css li, .js li {
+    background-color: white;
+}
+
+.html li {
+    list-style:decimal;
+}
+
+.css li {
+    list-style:upper-roman ;
+}
+
+.js li {
+    list-style: inside;
+    list-style-type: circle;
+} */ 
+
+/* -------------------------------------------- */
+
+
+/* img {
+    width: 40px;
+    vertical-align:bottom;
+}
+
+table {
+    text-align: center;
+    width: 700px;
+}
+
+td {
+    padding: 15px 0;
+    background-color: #eee;
+}
+
+th {
+    padding: 10px;
+    background-color: rgb(66, 25, 1);
+    color: white;
+}
+
+#view{
+    background-color: rgb(22, 141, 221);
+    color: white;
+    border-style: none;
+    padding: 5px;
+}
+
+#del {
+    background-color: rgb(252, 140, 159);
+    color: white;
+    border-style: none;
+    padding: 5px;
+} */
+/* ------------------------------------------------------------- */
 
 
 
