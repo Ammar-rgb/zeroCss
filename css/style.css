@@ -606,6 +606,136 @@ th {
 
 
 
+/* div:first-of-type, div:last-of-type {
+    background-color: #eee;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding: calc((60px - 18px) / 2) 0;
+}
+
+div:empty {
+    width: 300px;
+    height: 60px;
+    background-color: red;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
+
+/* ---------------------------------------------- */
+
+/* i couldn't use the position because i think it's a letter */
+
+/* div {
+    padding: 20px 0;
+    background-color:#eee ;
+    width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+div::first-letter {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    float: left;
+    margin-left: -14px;
+    margin-top: -10px;
+    
+} */
+
+/* ------------------------------------------------------ */
+
+
+
+/* p {
+    background-color: #6ee;
+    position: relative;
+    left: 100px;
+    border-left: solid 3px #e91e63;
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+}
+
+p::before {
+    content: attr(data-person) ;
+    background-color: #eee;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    left: 5px;
+    margin-top: -10px;
+}
+
+p::after {
+    content: "";
+    background-color:transparent;
+    position: absolute;
+    left: -20px;
+    margin-top: -2px;
+    border: 10px solid;
+    border-color: transparent #e91e63 transparent transparent ;
+
+} */
+
+/* ---------------------------------------------------------- */
+
+
+
+/* the pseudo elemet should take position if it's empty to appear */
+/* i can use counter-reset in the bodey before to start the counter before the incrementation */
+/* and i can use just counter-increment in the main element and content counter in the pseudeo element */
+
+/* p {
+    width: 400px;
+    background-color: #eee;
+    padding: 20px 90px;
+    position: relative;
+    counter-increment: section;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: orangered;
+}
+
+p::before {
+
+    
+    content: counter(section);
+    position: absolute;
+    color: white;
+    background-color: orangered;
+    padding: 20px 30px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-weight: bold;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
