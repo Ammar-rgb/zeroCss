@@ -118,7 +118,6 @@
 
 /* ---------------------------------------------------- */
 
-
 /* 
 div {
     width: 400px;
@@ -211,7 +210,7 @@ p, .title {
     text-shadow: 3px 3px 0 red, 6px 6px 0 blue, 9px 9px 0 pink;
     /* text-shadow: 0 0 3px red, 0 0 3px blue, 0 0 3px pink; */
 
-    /* ------------------------------------- */
+/* ------------------------------------- */
 
 /* p {
     font-family:sans-serif;
@@ -231,7 +230,7 @@ p, .title {
     font-size: 60px;
 }
  */
- /* --------------------------------------------------- */
+/* --------------------------------------------------- */
 
 /* div {
     width: 400px;
@@ -530,7 +529,6 @@ till a specific point
     right: -26.5px;
 } */
 
-
 /* ------------------------------------------------- */
 
 /* .main {
@@ -563,10 +561,9 @@ ul li {
 .js li {
     list-style: inside;
     list-style-type: circle;
-} */ 
+} */
 
 /* -------------------------------------------- */
-
 
 /* img {
     width: 40px;
@@ -603,8 +600,6 @@ th {
     padding: 5px;
 } */
 /* ------------------------------------------------------------- */
-
-
 
 /* div:first-of-type, div:last-of-type {
     background-color: #eee;
@@ -647,8 +642,6 @@ div::first-letter {
 
 /* ------------------------------------------------------ */
 
-
-
 /* p {
     background-color: #6ee;
     position: relative;
@@ -682,8 +675,6 @@ p::after {
 } */
 
 /* ---------------------------------------------------------- */
-
-
 
 /* the pseudo elemet should take position if it's empty to appear */
 /* i can use counter-reset in the bodey before to start the counter before the incrementation */
@@ -834,7 +825,6 @@ div::before {
 
 /* ---------------------------------------------------- */
 
-
 /* 
 note : only the vertical margin can collapse
 bigger margin wins
@@ -876,8 +866,6 @@ nesting doesn't prebvent collapsing
 } */
 
 /* ----------------------------------------------------------- */
-
-
 
 /* div {
     position: relative;
@@ -1027,7 +1015,6 @@ div {
 } */
 
 /* ---------------------------------------------------------- */
-
 
 /* .parent {
     width: 600px;
@@ -1185,156 +1172,68 @@ div {
 } */
 
 /* -------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  width: 600px;
+  height: 200px;
+  background: #eee;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  position: relative;
+  border-right: solid 15px #673ab7;
+  border-left: solid 15px #f44336;
+}
+
+.task::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    to right,
+    #f44336 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    #4caf50 40%,
+    #4caf50 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #673ab7 80%
+  );
+}
+
+
+.task::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      to right,
+      #f44336 20%,
+      #2196f3 20%,
+      #2196f3 40%,
+      #4caf50 40%,
+      #4caf50 60%,
+      #e91e63 60%,
+      #e91e63 80%,
+      #673ab7 80%
+    );
+  }
+
+.task::first-letter {
+    
+}
