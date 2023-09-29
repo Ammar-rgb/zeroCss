@@ -1172,7 +1172,10 @@ div {
 } */
 
 /* -------------------------------------------------------------------- */
-* {
+
+/* noteeee : you con't use pseudo elment ::first-letter when using display-flex */
+
+/* * {
   padding: 0;
   margin: 0;
 }
@@ -1184,9 +1187,8 @@ div {
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 200px;
   margin: 20px auto;
   position: relative;
   border-right: solid 15px #673ab7;
@@ -1211,10 +1213,10 @@ div {
     #e91e63 80%,
     #673ab7 80%
   );
-}
+} */
 
-
-.task::before {
+/* notee : to prevent the color merging you should put start and end */
+/* .task::before {
     content: "";
     width: 100%;
     height: 15px;
@@ -1235,5 +1237,74 @@ div {
   }
 
 .task::first-letter {
-    test
+    color: #f44336;
+} */
+
+
+/* ------------------------------------------------------ */
+
+
+/* div {
+    width: 600px;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    color: #797c84;
+    caret-color: #f44336;
 }
+
+div::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+    left: 0;
+    bottom: 0;
+}
+
+div:focus {
+    color: black;
+} */
+
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
