@@ -1274,6 +1274,96 @@ div:focus {
 
 /* ------------------------------------------------------------- */
 
+/* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 40px 1fr;
+    color: white;
+    gap: 10px;
+    font-weight: bold;
+
+  }
+  .grid div {
+    counter-increment: section;
+    background: #607d8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .grid div::after {
+    content: "Element " counter(section);
+  } */
+
+/* ----------------------------------------------- */
+
+/* .layout {
+    background-color:#eee;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "head head head head head head head head head head"
+    "sec sec sec sec sec sec sec sec sec as " 
+    "foot foot foot foot foot foot foot foot foot foot";
+    grid-template-columns: repeat(9, 1fr) 200px ;
+    grid-template-rows: 50px 1fr 50px;
+
+}
+
+header {
+    background:#03a9f4;
+    grid-area:head;
+}
+
+header::after {
+    content: "Header";
+}
+
+
+section {
+    background: #ff5722;
+    grid-area: sec;
+}
+
+section::after {
+    content: "Section";
+}
+
+
+aside {
+    background:#607d8b;
+    grid-area: as;
+}
+
+aside::after {
+    content: "Aside";
+}
+
+footer {
+    background-color:#009688;
+    grid-area: foot;
+}
+
+footer::after{
+    content: "Footer";
+} */
+/* --------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
