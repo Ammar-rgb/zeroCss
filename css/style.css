@@ -1586,52 +1586,181 @@ div::after {
 } */
 
 /* ----------------------------------------------------- */
-* {
+
+/* 
+The margin: auto; on the div element does indeed center
+it both horizontally and vertically within the grid container.
+Here's how this works:
+
+display: grid; is set on the body element, which make
+s it a grid container.
+
+margin: auto; applied to the div element has a special
+behavior when used in a grid context. In this context,
+it centers the element both horizontally and vertically
+within its grid cell. This is a grid-specific behavior
+that makes it possible to center
+an element vertically using margin: auto; within a grid.
+
+So, in your code, display: grid; combined with margin: auto;
+on the div element effectively centers the div both
+horizontally and vertically within the grid cell
+, making it appear as if the div is vertically centered.
+This is a convenient way to center content within a grid container
+, both horizontally and vertically.
+
+*/
+
+
+
+
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
 }
 
-div {
+div{
     width: 200px;
     height: 200px;
-    position: relative;
-    line-height: 200px;
-    text-align: center;
+    margin: auto;
     background-color: #eee;
+    text-align: center;
+    line-height: 180px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
     border: solid 10px #e91e63;
-    /* border-left: solid 10px white; */
-    
+    border-left: solid 10px white;
+    position: relative;
+
 }
 
-div::before {
+
+div::after {
     content:'';
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right: 0;
     background-color: #1cb0f3;
+    position:absolute;
+    top: -20px;
+    left: -20px;
     z-index: -1;
-    border: solid 10px ;
+    border: #1cb0f3 20px solid;
+    border-radius: 50%;
+    border-right: solid 20px white;
+} */
+
+/* ----------------------------------------------------- */
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 180px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+    border: solid 10px #e91e63;
+    border-left: solid 10px white;
+    position: relative;
+  }
+  
+  div::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1cb0f3;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    border: #1cb0f3 20px solid;
+    border-radius: 50%;
+    border-right: solid 20px white;
+  } */
+  
+/* ------------------------------------------------------- */
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 180px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  div::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #e91e63;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    border: #e91e63 10px solid;
+    border-radius: 50%;
+    border-left: solid 10px white;
+    transition-duration: 0.9s;
+  }
+
+  div::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1cb0f3;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -2;
+    border: #1cb0f3 20px solid;
+    border-radius: 50%;
+    border-right: solid 20px white;
+    transition-duration: 0.9s;
+    
+  }
+
+div:hover::after{
+    transform: rotate(360deg);
 }
 
+div:hover::before{
+    transform: rotate(-360deg);
+} */
 
-
-
-
-
-
-
-
-
+/* ------------------------------------------------- */
 
