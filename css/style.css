@@ -1764,3 +1764,23 @@ div:hover::before{
 
 /* ------------------------------------------------- */
 
+:root {
+    --bgcolor: #ff5722;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: var(--bgcolor);
+    margin: 80px auto;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transform-style: preserve-3d;
+    transform: skew(20deg, 0);
+}
