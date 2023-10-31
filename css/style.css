@@ -1781,6 +1781,224 @@ h1 {
     padding: 20px;
     text-align: center;
     color: white;
-    transform-style: preserve-3d;
-    transform: skew(20deg, 0);
+    position: relative;
+    z-index: 3;
 }
+
+h1::before, h1::after {
+    content:'';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1::before {
+    background-color: black;
+    z-index: 2;
+}
+
+h1::after {
+    background-color: blue;
+    z-index: 1;
+}
+
+
+
+
+/* --------------------------------------------- */
+
+
+/* :root {
+    --bgcolor: #009688;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: var(--bgcolor);
+    margin: 80px auto;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+h1::before {
+    content: '';
+    width: 12%;
+    height: 100%;
+    background-color: var(--bgcolor);
+    position: absolute;
+    left: -14px;
+    top: 0px;
+    border-right: solid 10px white;
+    transform: skew(20deg);
+} */
+
+/* ----------------------------------------- */
+
+/* transform: matrix(3, 0.2679, 0, 3, 20, 100); 
+transform : translateX(20) translateY(100) scaleX(3) skewY(0,2679) skewX(0) scaleY(3);  
+*/
+
+/* ------------------------------------------------ */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(67, 131, 4);
+    border-bottom: black solid 10px;
+    position: relative;
+    
+}
+
+div::after {
+    content: 'Elzero';
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+div::before {
+    content: '';
+    background-color: black;
+    width: 68%;
+    height: 68%;
+    position: absolute;
+    top: -69px;
+    left: 27px;
+    transform: rotate(44deg);
+    border-right: white solid 10px;
+    border-bottom: white solid 10px;
+    
+} */
+
+/* --------------------------------------- */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(67, 131, 4);
+    border-bottom: black solid 10px;
+    position: relative;
+    
+}
+
+div::after {
+    content: 'Elzero';
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+div::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  131.42px;
+    height:  131.42px;
+    transform-origin: left top;
+    transform: rotate(-45deg);
+    border-left: white solid 10px;
+    border-bottom: white solid 10px;
+} */
+
+/* ----------------------------------------------- */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+    perspective: 400px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+div:hover {
+    transform: rotateX(-180deg);
+
+}
+
+div::after, div::before {
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    backface-visibility: hidden;
+    
+}
+
+div::after {
+    content: 'Front';
+    background-color:#fa3664;
+    z-index:2;
+    
+}
+
+div::before {
+    content: 'Back';   
+    background-color:#1692fc;
+    z-index:3;
+    transform: rotateX(180deg);
+    
+} */
+
+
+
+/* ------------------------------------------------ */
+
