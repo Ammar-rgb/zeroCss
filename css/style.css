@@ -1546,8 +1546,8 @@ h5 {
 } */
 /* --------------------------------------------------------- */
 
-
-/* div {
+/* 
+div {
     width: 300px;
     height: 200px;
     margin: 100px auto;
@@ -1715,8 +1715,9 @@ div::after {
     width: 200px;
     height: 200px;
     background-color: #eee;
-    text-align: center;
-    line-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     font-size: 30px;
     border-radius: 50%;
@@ -1727,31 +1728,23 @@ div::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #e91e63;
     position: absolute;
-    top: -10px;
-    left: -10px;
-    z-index: -1;
-    border: #e91e63 10px solid;
+    border:10px solid;
     border-radius: 50%;
-    border-left: solid 10px white;
-    transition-duration: 0.9s;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    transition-duration: 0.5s;
   }
 
   div::after{
     content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #1cb0f3;
+    width: 220px;
+    height: 220px;
     position: absolute;
-    top: -20px;
-    left: -20px;
-    z-index: -2;
-    border: #1cb0f3 20px solid;
+    border: 10px solid;
     border-radius: 50%;
-    border-right: solid 20px white;
-    transition-duration: 0.9s;
-    
+    border-color:#1cb0f3 transparent #1cb0f3 #1cb0f3;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
   }
 
 div:hover::after{
@@ -1764,7 +1757,7 @@ div:hover::before{
 
 /* ------------------------------------------------- */
 
-/* :root {
+/*:root {
     --bgcolor: #ff5722;
 }
 
@@ -1785,12 +1778,12 @@ h1 {
 }
 
 h1::before, h1::after {
-    height: 95%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
     color: white;
+    top: 0;
+    left: 0;
     
 }
 
@@ -1798,23 +1791,23 @@ h1::before {
     content:'';
     background-color: var(--bgcolor);
     z-index: -1;
-    transform: translate(-50%, -50%) skew(20deg) rotate(15deg) ;
+    transform: skew(10deg, 10deg);
 }
 
 h1::after {
     content:'';
     background-color: var(--bgcolor);
     z-index: -2;
-    transform: translate(-50%, -50%) skew(-20deg) rotate(-15deg) ;
-} */
+    transform: skew(-10deg, -10deg);
+} 
 
-
+*/
 
 
 /* --------------------------------------------- */
 
 
-/* :root {
+ /* :root {
     --bgcolor: #009688;
 }
 
@@ -1844,7 +1837,7 @@ h1::before {
     top: 0px;
     border-right: solid 10px white;
     transform: skew(20deg);
-} */
+}  */
 
 /* ----------------------------------------- */
 
@@ -1941,7 +1934,7 @@ div::before {
     transform: rotate(-45deg);
     border-left: white solid 10px;
     border-bottom: white solid 10px;
-} */
+} 
 
 /* ----------------------------------------------- */
 /* * {
