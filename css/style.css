@@ -1611,9 +1611,6 @@ This is a convenient way to center content within a grid container
 
 */
 
-
-
-
 /* * {
     padding: 0;
     margin: 0;
@@ -1696,7 +1693,7 @@ div::after {
     border-radius: 50%;
     border-right: solid 20px white;
   } */
-  
+
 /* ------------------------------------------------------- */
 
 /* * {
@@ -1803,11 +1800,9 @@ h1::after {
 
 */
 
-
 /* --------------------------------------------- */
 
-
- /* :root {
+/* :root {
     --bgcolor: #009688;
 }
 
@@ -1995,7 +1990,389 @@ div::before {
     
 } */
 
-
-
 /* ------------------------------------------------ */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 10px solid #fa3664;
+    border-left-color: transparent;
+    border-radius: 50%;
+    
+}
+
+div::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    z-index: -1;
+    border: 10px solid #1692fc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+
+div::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: -2;
+    border: 10px solid #f8a400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    
+}
+
+div {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* ----------------------------------------------------- */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+.blue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 10px solid #1692fc;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-duration: 1s;
+}
+
+.gold {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    border: 10px solid #f8a400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-duration: 0.7s;
+}
+
+.black{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 10px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-duration: 0.5s;
+    
+}
+
+.gold, .blue, .black {
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container:hover .black,
+.container:hover .blue,
+.container:hover .gold {
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+} */
+
+/* ------------------------------------------ */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 10px solid #1692fc;
+    border-left-color: transparent;
+    border-radius: 50%;
+    animation-name: rodiv;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    
+}
+
+div::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    z-index: -1;
+    border: 10px solid #f8a400;
+    top: 50%;
+    left: 50%;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation-duration: 0.7s;
+}
+
+div::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: -2;
+    border: 10px solid black;
+    top: 50%;
+    left: 50%;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-duration: 0.5s;
+    
+}
+div::after, div::before {
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+div:hover,
+div:hover::before,
+div:hover::after {
+    animation-play-state: paused;
+}
+@keyframes rotate {
+    from {
+        transform:translate(-50%, -50%)
+    }
+    to {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+} 
+@keyframes rodiv {
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* -------------------------------------------------- */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 10px solid #1692fc;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation-duration: 1s;
+}
+
+div::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  z-index: -1;
+  border: 10px solid #f8a400;
+  top: 50%;
+  left: 50%;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+div::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: -2;
+  border: 10px solid black;
+  top: 50%;
+  left: 50%;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+div,
+div::after,
+div::before {
+  animation: rotate 1s linear infinite paused;
+}
+div::after {
+  animation-duration: 0.5s;
+}
+div::before {
+  animation-duration: 0.7s;
+}
+div:hover,
+div:hover::before,
+div:hover::after {
+  animation-play-state: running;
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+} */
+
+/* ------------------------------------------- */
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 10px solid ;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: rotate 1s linear infinite ;
+  }
+
+  @keyframes rotate {
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-350deg) ;
+    }
+  } */
+
+
+/* -------------------------------------------- */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
