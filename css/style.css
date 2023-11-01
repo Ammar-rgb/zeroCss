@@ -2316,14 +2316,60 @@ div:hover::after {
 
 
 /* -------------------------------------------- */
- 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.first {
+    width: 300px;
+    height: 400px;
+    margin:70px auto;
+    background-color: #323234;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    position: relative;
+}
 
+.first div {
+    width: 240px;
+    height: 110px;
+    background-color: white;
+}
 
+.first::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: gold;
+    margin: 10px;
+    position: absolute;
+    animation: square1 7s linear infinite alternate ;
+}
 
-
-
-
+@keyframes square1 {
+    10% {
+        transform: translate(-240px, 0px);
+    }
+    20% {
+        transform: translate(-240px, 340px);
+    }
+    30% {
+        transform: translate(240px, 340px);
+    }
+    40% {
+        transform: translate(-240px, 340px);
+    }
+    50% {
+        transform: translate(-240px, -300px);
+    }
+    60% {
+        transform: translate(240px, 300px);
+    }
+}
 
 
 
