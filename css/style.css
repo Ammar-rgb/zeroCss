@@ -2367,25 +2367,28 @@ div:hover::after {
 }
 
 .first::before {
-  animation: square1 5s linear 3s infinite;
+  animation: square1 8s linear infinite forwards;
 }
 
 .second::before {
   bottom: 0;
-  animation: square2 3s linear 1 forwards;
+  animation: square2 8s linear infinite forwards;
 }
 
 @keyframes square1 {
-  10% {
-    transform: translate(-240px, 0px);
-  }
-  20% {
-    transform: translate(-240px, 170px);
+  26.5% {
+    transform: translate(0px, 0px);
   }
   30% {
-    transform: translate(0px, 170px);
+    transform: translate(-240px, 0px);
+  }
+  35% {
+    transform: translate(-240px, 170px);
   }
   40% {
+    transform: translate(0px, 170px);
+  }
+  45% {
     transform: translate(-240px, 170px);
   }
   50% {
@@ -2399,6 +2402,7 @@ div:hover::after {
   }
   80% {
     transform: translate(-240px, 0px);
+    opacity: 1;
   }
   100% {
     transform: translate(0px, 0px);
@@ -2406,12 +2410,28 @@ div:hover::after {
 }
 
 @keyframes square2 {
-  50% {
+  15% {
+    display: none;
+    transform: translate(0px, 0px);
+  }
+  17% {
+    display: block;
+    transform: translate(0px, 0px);
+  }
+  20% {
     transform: translate(-240px, 0px);
   }
-  90% {
+  25% {
     transform: translate(-240px, -340px);
     opacity: 1;
+  }
+  30% {
+    transform: translate(-240px, -340px);
+    opacity: 0;
+  }
+
+  73% {
+    transform: translate(-240px, -340px);
   }
   100% {
     transform: translate(-240px, -340px);
