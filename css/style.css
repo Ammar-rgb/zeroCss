@@ -2394,15 +2394,18 @@ div:hover::after {
   50% {
     transform: translate(-240px, 340px);
   }
-  60% {
+  55% {
     transform: translate(0px, 340px);
   }
-  70% {
+  60% {
     transform: translate(-240px, 340px);
   }
   80% {
     transform: translate(-240px, 0px);
     opacity: 1;
+  }
+  85%{
+    transform: translate(0px, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -2410,12 +2413,10 @@ div:hover::after {
 }
 
 @keyframes square2 {
-  15% {
-    display: none;
+  10%{
     transform: translate(0px, 0px);
   }
-  17% {
-    display: block;
+  15% {
     transform: translate(0px, 0px);
   }
   20% {
@@ -2432,6 +2433,7 @@ div:hover::after {
 
   73% {
     transform: translate(-240px, -340px);
+    opacity: 0;
   }
   100% {
     transform: translate(-240px, -340px);
