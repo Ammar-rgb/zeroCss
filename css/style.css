@@ -2286,7 +2286,6 @@ div:hover::after {
 
 /* ------------------------------------------- */
 
-
 /* * {
     box-sizing: border-box;
     margin: 0;
@@ -2314,111 +2313,108 @@ div:hover::after {
     }
   } */
 
-
 /* -------------------------------------------- */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.first,
+.second {
+  width: 300px;
+  height: 400px;
+  margin: 90px auto;
+  background-color: #323234;
+  position: relative;
 }
 
 .first {
-    width: 300px;
-    height: 400px;
-    margin:70px auto;
-    background-color: #323234;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+.second {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .first div {
-    width: 240px;
-    height: 110px;
-    background-color: white;
+  width: 240px;
+  height: 110px;
+  background-color: white;
+}
+.second div {
+  width: 240px;
+  height: 340px;
+  background-color: white;
+}
+
+.first::before,
+.second::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  margin: 10px;
+  position: absolute;
 }
 
 .first::before {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-color: gold;
-    margin: 10px;
-    position: absolute;
-    animation: square1 7s linear infinite alternate ;
+  animation: square1 5s linear 3s infinite;
+}
+
+.second::before {
+  bottom: 0;
+  animation: square2 3s linear 1 forwards;
 }
 
 @keyframes square1 {
-    10% {
-        transform: translate(-240px, 0px);
-    }
-    20% {
-        transform: translate(-240px, 340px);
-    }
-    30% {
-        transform: translate(240px, 340px);
-    }
-    40% {
-        transform: translate(-240px, 340px);
-    }
-    50% {
-        transform: translate(-240px, -300px);
-    }
-    60% {
-        transform: translate(240px, 300px);
-    }
+  10% {
+    transform: translate(-240px, 0px);
+  }
+  20% {
+    transform: translate(-240px, 170px);
+  }
+  30% {
+    transform: translate(0px, 170px);
+  }
+  40% {
+    transform: translate(-240px, 170px);
+  }
+  50% {
+    transform: translate(-240px, 340px);
+  }
+  60% {
+    transform: translate(0px, 340px);
+  }
+  70% {
+    transform: translate(-240px, 340px);
+  }
+  80% {
+    transform: translate(-240px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes square2 {
+  50% {
+    transform: translate(-240px, 0px);
+  }
+  90% {
+    transform: translate(-240px, -340px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-240px, -340px);
+    opacity: 0;
+  }
+}
