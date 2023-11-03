@@ -2437,6 +2437,6 @@ div:hover::after {
   }
   100% {
     transform: translate(-240px, -340px);
-    opacity: 0;
+    opacity: 0 ;
   }
 }
