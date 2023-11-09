@@ -2282,7 +2282,7 @@ div:hover::after {
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-} */
+} 
 
 /* ------------------------------------------- */
 
@@ -2314,7 +2314,7 @@ div:hover::after {
   } */
 
 /* -------------------------------------------- */
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -2443,4 +2443,4 @@ div:hover::after {
     transform: translate(-240px, -340px);
     opacity: 0 ;
   }
-}
+} */
